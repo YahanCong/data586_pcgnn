@@ -41,4 +41,8 @@ python main.py --config ./config/pcgnn_ali.yml
 ```
 ## Note for Alibaba dataset.
 
-Since we have four relations in Alibaba, before you run `python main.py --config ./config/pcgnn_ali.yml`, please uncomment all codes with keyword `r4` (r4_score, r4_list, r4_sample_num_list, etc) in `src/layers`, and uncomment all code with keyword `relation4` in `src/model_handler` to switch the model for a 4-relation dataset.
+Since we have four relations in Alibaba, before you run `python main.py --config ./config/pcgnn_ali.yml`, please uncomment all codes includes keyword `r4` (r4_score, r4_list, r4_sample_num_list, etc) in `src/layers`, and uncomment all code with keyword `relation4` in `src/model_handler` to switch the model for a 4-relation dataset.
+
+## Parameter tunning
+
+We use grid search to fine-tuning our models. Grid search results stores at `/grid`
