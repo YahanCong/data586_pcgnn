@@ -27,18 +27,11 @@ Run `python src/data_process.py` to pre-process the data.
 python main.py --config ./config/pcgnn_yelpchi.yml
 ```
 
-## Citation
-
-```
-@inproceedings{liu2021pick,
-  title={Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection},
-  author={Liu, Yang and Ao, Xiang and Qin, Zidi and Chi, Jianfeng and Feng, Jinghua and Yang, Hao and He, Qing},
-  booktitle={Proceedings of the Web Conference 2021},
-  pages={3168--3177},
-  year={2021}
-}
+```sh
+python main.py --config ./config/pcgnn_comp.yml
 ```
 
-## Other implementations
+```sh
+python main.py --config ./config/pcgnn_ali.yml
+```
 
-Thanks for [Jack Huang](https://github.com/f26401004/PC-GNN) and [Ronald D. R. Pereira](https://github.com/ronaldpereira/pick-and-choose-gnn) for their kind implementations.
