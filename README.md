@@ -16,9 +16,16 @@ torch             1.4.0
 
 ## Dataset
 
-We have three dataset: YelpChi, FDCompCN(comp) and AlibabaLoan. Please put them in `/data` directory and run `unzip /data/YelpChi.zip`, `unzip /data/comp.zip`, and `unzip /data/AlibabaLoan.zip` to unzip the datasets.
+We have three preprocessed datasets: YelpChi, FDCompCN(comp) and AlibabaLoan. Please put them in `/data` directory and run `unzip /data/YelpChi.zip`, `unzip /data/comp.zip`, and `unzip /data/AlibabaLoan.zip` to unzip the datasets.
 
 Run `python src/data_process.py` to pre-process the data.
+
+The original dataset for yelpchi can be found in [YelpChi](https://odds.cs.stonybrook.edu/yelpchi-dataset/)
+
+The original dataset for FDCompCN can be found in [FDCompCN](https://github.com/Split-GNN/SplitGNN/blob/master/data/FDCompCN.zip)
+
+The original dataset about AliababaLoan can be found in [AliTianchi](https://tianchi.aliyun.com/dataset/168012) 
+
 
 
 ## Usage
