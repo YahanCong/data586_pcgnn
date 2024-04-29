@@ -16,7 +16,7 @@ torch             1.4.0
 
 ## Dataset
 
-We have three preprocessed datasets: YelpChi, FDCompCN(comp) and AlibabaLoan. Please find them in `/data` directory and run `unzip /data/YelpChi.zip`, `unzip /data/comp.zip`, and `unzip /data/AlibabaLoan.zip` to unzip the datasets.
+We have three preprocessed datasets: [YelpChi](https://github.com/YahanCong/data586_pcgnn/blob/main/data/YelpChi.zip), [FDCompCN(comp)](https://github.com/YahanCong/data586_pcgnn/blob/main/data/comp.zip) and [AlibabaLoan](https://github.com/YahanCong/data586_pcgnn/blob/main/data/AlibabaLoan.zip). Please find them in `/data` directory and run `unzip /data/YelpChi.zip`, `unzip /data/comp.zip`, and `unzip /data/AlibabaLoan.zip` to unzip the datasets.
 
 Run `python src/data_process.py` to pre-process the data.
 
@@ -24,7 +24,7 @@ The original dataset for yelpchi can be found in [YelpChi](https://odds.cs.stony
 
 The original dataset for FDCompCN can be found in [FDCompCN](https://github.com/Split-GNN/SplitGNN/blob/master/data/FDCompCN.zip)
 
-The original dataset about AliababaLoan can be found in [AliTianchi](https://tianchi.aliyun.com/dataset/168012) 
+The original dataset about AliababaLoan can be found in [AliTianchi](https://tianchi.aliyun.com/dataset/168012) Our graph structure (sparse matrix) constructing process can be found in [Alibaba_data_transfer](https://github.com/YahanCong/data586_pcgnn/blob/main/data/Alibaba_data_transfer/fraud_data_transfer.ipynb)
 
 
 
