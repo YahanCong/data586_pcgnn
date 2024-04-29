@@ -23,6 +23,7 @@ class ModelHandler(object):
 	def __init__(self, config):
 		args = argparse.Namespace(**config)
 		# load graph, feature, and label
+		# PLEASE COMMENT THIS LINE AND REPLACE WITH 4-relation adj_list if you want to run Alibaba
 		[homo, relation1, relation2, relation3], feat_data, labels = load_data(args.data_name, prefix=args.data_dir)
 		## adjust for alibaba only
 		#[homo, relation1, relation2, relation3, relation4], feat_data, labels = load_data(args.data_name, prefix=args.data_dir)
@@ -80,6 +81,7 @@ class ModelHandler(object):
 		if args.model == 'SAGE' or args.model == 'GCN':
 			adj_lists = homo
 		else:
+			# PLEASE COMMENT THIS LINE AND REPLACE WITH 4-relation adj_list if you want to run Alibaba
 			adj_lists = [relation1, relation2, relation3]
 			## for alibaba
 			#adj_lists = [relation1, relation2, relation3, relation4]
