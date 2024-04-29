@@ -1,0 +1,35 @@
+# Data
+# Alibaba dataset，
+data_name: 'AlibabaLoan'
+data_dir: './data/'
+train_ratio: 0.8
+test_ratio: 0.27
+save_dir: './pytorch_models/'
+
+# Model
+model: 'PCGNN'
+multi_relation: 'GNN'
+
+
+# Model architecture
+emb_size: 64
+
+thres: 0.4
+
+rho: 0.8
+
+seed: 42
+
+# hyper-parameters
+optimizer: 'adam'
+lr: 0.001
+weight_decay: 0.0002
+batch_size: 256
+num_epochs: 51
+valid_epochs: 5
+alpha: 2
+
+
+# Device
+no_cuda: True
+cuda_id: '2'

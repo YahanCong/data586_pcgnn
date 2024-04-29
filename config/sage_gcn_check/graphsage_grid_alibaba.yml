@@ -1,0 +1,70 @@
+# Data
+data_name: 'AlibabaLoan'
+data_dir: './data/'
+train_ratio: 0.8
+test_ratio: 0.27
+save_dir: './pytorch_models/'
+
+# Model
+#model: 'PCGNN'
+model: 'SAGE'
+multi_relation: 'GNN'
+
+
+# Model architecture
+emb_size:
+  - 32
+  - 64
+
+thres: 0.4
+
+# rho does not affect graphsage
+rho: 0.4
+#  - 0.2
+#  - 0.4
+#  - 0.5
+#  - 0.6
+#  - 0.8
+
+seed: 42
+
+# # Run multiple times with different random seeds
+# seed:
+#     - 42
+#     - 72
+    # - 448
+    # - 854
+    # - 29493
+    # - 88867
+
+
+# hyper-parameters
+optimizer: 'adam'
+lr: #0.005
+  - 0.001
+  - 0.002
+  - 0.003
+  - 0.005
+weight_decay: #0.0001
+  - 0.0001
+  - 0.0002
+  - 0.0003
+  - 0.0005
+batch_size:
+  - 64
+  - 256
+num_epochs:
+  - 51
+  - 100
+  - 500
+  # - 300
+  # - 400
+  # - 500
+valid_epochs: 10
+# alpha does not affect graphsage
+alpha: 2
+
+
+# Device
+no_cuda: True
+cuda_id: '2'

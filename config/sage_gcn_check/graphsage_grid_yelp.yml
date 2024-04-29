@@ -1,0 +1,48 @@
+# Data
+# yelp dataset
+data_name: 'yelp'
+data_dir: './data/'
+train_ratio: 0.4
+test_ratio: 0.67
+save_dir: './pytorch_models/'
+
+# Model
+model: 'SAGE'
+#model: 'GCN'
+#model: 'PCGNN'
+multi_relation: 'GNN'
+
+# Model architecture
+emb_size:
+  - 64
+  - 128
+
+#thres: 0.4
+thres:
+   - 0.2
+   - 0.4
+   - 0.5
+
+#rho does not affect GCN and graphsage
+rho: 0.8
+
+seed: 72
+
+optimizer: 'adam'
+lr:
+    - 0.01
+    - 0.05
+weight_decay:
+    - 0.0001
+    - 0.01
+batch_size:
+    - 256
+    - 1024
+num_epochs: 50
+valid_epochs: 5
+# alpha does not affect GCN and sage
+alpha: 2
+
+# Device
+no_cuda: True
+cuda_id: '2'
