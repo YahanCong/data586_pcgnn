@@ -1,0 +1,29 @@
+Running configuration 3/4:
+**************** MODEL CONFIGURATION ****************
+alpha                    -->   2
+batch_size               -->   256
+cuda_id                  -->   2
+data_dir                 -->   ./data/
+data_name                -->   alibaba
+emb_size                 -->   64
+lr                       -->   0.001
+model                    -->   PCGNN
+multi_relation           -->   GNN
+no_cuda                  -->   True
+num_epochs               -->   51
+optimizer                -->   adam
+rho                      -->   0.8
+save_dir                 -->   ./pytorch_models/
+seed                     -->   42
+test_ratio               -->   0.27
+thres                    -->   0.4
+train_ratio              -->   0.8
+valid_epochs             -->   5
+weight_decay             -->   0.0005
+
+**************** MODEL CONFIGURATION ****************
+F1-Macro: 0.3225806451612903
+F1-binary-1: 0.3333333333333333
+F1-binary-0: 0.3118279569892473
+AUC: 0.6677106027596224
+G-Mean: 0.41046584230346617

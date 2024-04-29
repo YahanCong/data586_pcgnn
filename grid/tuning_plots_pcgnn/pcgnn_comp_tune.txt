@@ -1,0 +1,28 @@
+F1 macro and G-mean Running configuration 26/32:
+**************** MODEL CONFIGURATION ****************
+alpha                    -->   2
+batch_size               -->   256
+cuda_id                  -->   2
+data_dir                 -->   ./data/
+data_name                -->   comp
+emb_size                 -->   64
+lr                       -->   0.005
+model                    -->   PCGNN
+multi_relation           -->   GNN
+no_cuda                  -->   True
+num_epochs               -->   500
+optimizer                -->   adam
+rho                      -->   0.2
+save_dir                 -->   ./pytorch_models/
+seed                     -->   42
+test_ratio               -->   0.27
+thres                    -->   0.4
+train_ratio              -->   0.8
+valid_epochs             -->   50
+weight_decay             -->   0.0001
+**************** MODEL CONFIGURATION ****************
+F1-Macro: 0.4778825235678027
+F1-binary-1: 0.28571428571428575
+F1-binary-0: 0.6700507614213197
+AUC: 0.7816537467700259
+G-Mean: 0.6658910216493223

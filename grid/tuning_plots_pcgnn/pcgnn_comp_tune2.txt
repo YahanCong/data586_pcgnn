@@ -1,0 +1,28 @@
+AUC :Running configuration 12/32:
+**************** MODEL CONFIGURATION ****************
+alpha                    -->   2
+batch_size               -->   256
+cuda_id                  -->   2
+data_dir                 -->   ./data/
+data_name                -->   comp
+emb_size                 -->   64
+lr                       -->   0.005
+model                    -->   PCGNN
+multi_relation           -->   GNN
+no_cuda                  -->   True
+num_epochs               -->   500
+optimizer                -->   adam
+rho                      -->   0.8
+save_dir                 -->   ./pytorch_models/
+seed                     -->   42
+test_ratio               -->   0.27
+thres                    -->   0.4
+train_ratio              -->   0.8
+valid_epochs             -->   5
+weight_decay             -->   0.0001
+**************** MODEL CONFIGURATION ****************
+F1-Macro: 0.3921952342580868
+F1-binary-1: 0.24657534246575338
+F1-binary-0: 0.5378151260504201
+AUC: 0.7905684754521964
+G-Mean: 0.5786913866044945
