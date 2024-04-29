@@ -23,20 +23,22 @@ Run `python src/data_process.py` to pre-process the data.
 
 ## Usage
 
-YelpChi dataset:
+YelpChi dataset (3-relation dataset):
 
 ```sh
 python main.py --config ./config/pcgnn_yelpchi.yml
 ```
 
-FDCompCN(comp) dataset:
+FDCompCN(comp) dataset (3-relation dataset):
 
 ```sh
 python main.py --config ./config/pcgnn_comp.yml
 ```
 
-AlibabaLoan dataset:
+AlibabaLoan dataset (4-relation dataset):
 ```sh
 python main.py --config ./config/pcgnn_ali.yml
 ```
+## Note for Alibaba dataset.
 
+Since we have four relations in Alibaba, before you run `python main.py --config ./config/pcgnn_ali.yml`, please uncomment all codes with key words `r4` in `src/layers`, and uncomment all code with `relation4` in `src/model_handler` to replace code for 4-relation dataset. 
