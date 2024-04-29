@@ -1,8 +1,8 @@
 # Data
 data_name: 'yelp'
 data_dir: './data/'
-train_ratio: 0.4
-test_ratio: 0.67
+train_ratio: 0.8
+test_ratio: 0.27
 save_dir: './pytorch_models/'
 
 # Model
@@ -14,16 +14,16 @@ multi_relation: 'GNN'
 # Model architecture
 emb_size: 64
 
-thres: 0.5
+thres: 0.4
 
-rho: 0.5
+rho: 0.2
 # rho:
 #   - 0.2
 #   - 0.4
 #   - 0.6
 #   - 0.8
 
-seed: 72
+seed: 42
 
 # # Run multiple times with different random seeds
 # seed:
@@ -36,9 +36,9 @@ seed: 72
 
 # hyper-parameters
 optimizer: 'adam'
-lr: 0.01 
-weight_decay: 0.001
-batch_size: 1024
+lr: 0.005
+weight_decay: 0.0001
+batch_size: 256
 num_epochs: 51
 valid_epochs: 5
 alpha: 2
