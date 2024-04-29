@@ -16,21 +16,26 @@ torch             1.4.0
 
 ## Dataset
 
-We have three dataset: YelpChi, FDComp and AlibabaLoan. Please put them in `/data` directory and run `unzip /data/YelpChi.zip`, `unzip /data/comp.zip`, and `unzip /data/AlibabaLoan.zip` to unzip the datasets.
+We have three dataset: YelpChi, FDCompCN(comp) and AlibabaLoan. Please put them in `/data` directory and run `unzip /data/YelpChi.zip`, `unzip /data/comp.zip`, and `unzip /data/AlibabaLoan.zip` to unzip the datasets.
 
 Run `python src/data_process.py` to pre-process the data.
 
 
 ## Usage
 
+YelpChi dataset:
+
 ```sh
 python main.py --config ./config/pcgnn_yelpchi.yml
 ```
+
+FDCompCN(comp) dataset:
 
 ```sh
 python main.py --config ./config/pcgnn_comp.yml
 ```
 
+AlibabaLoan dataset:
 ```sh
 python main.py --config ./config/pcgnn_ali.yml
 ```
