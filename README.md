@@ -1,6 +1,6 @@
 # PC-GNN
 
-This is data586 project about reproduce  "[Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3442381.3449989)" (WebConf 2021).
+This is data586 project about reproduce PC-GNN (WWW 2021).
 
 
 ## Requirements
